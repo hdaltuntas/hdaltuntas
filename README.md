@@ -1,10 +1,6 @@
 <p align="center">
 <img src="docs/images/banner.svg" width="100%" alt="Hasan Deniz Altuntaş">
 <br/>
-<a href="https://github.com/hdaltuntas">
-    <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=18&duration=2000&pause=100&multiline=true&width=620&height=80&lines=Hasan+Deniz+Altunta%C5%9F%2C+PhD;Geotechnical+Engineer+%E2%80%94+research+and+open-source+tools;Slope+Stability+%7C+Retaining+Walls+%7C+Pavements+%7C+PINNs" alt="Typing SVG" />
-</a>
-<br/>
 
 <a href="https://www.hasandenizaltuntas.com">
     <img src="https://img.shields.io/badge/Website-hasandenizaltuntas.com-red?style=flat-square">
@@ -61,17 +57,6 @@
 <tr><th colspan="3">Tools</th></tr>
 <tr><th width="40%">Title</th><th width="12%">Stars</th><th width="48%">Technologies</th></tr>
 <tr><td><a href="https://github.com/hdaltuntas/TermTrace">TermTrace</a></td><td><img alt="Stars" src="https://img.shields.io/github/stars/hdaltuntas/TermTrace?style=flat-square&labelColor=black"/></td><td><img src="https://img.shields.io/badge/Rust-black?style=flat-square&logo=rust"></td></tr>
-</table>
-
-### 🧭 In the Pipeline
-
-<table style="table-layout:fixed;width:100%">
-<tr><th width="40%">Project</th><th width="60%">What it does</th></tr>
-<tr><td>Sheet Pile Wall Analysis</td><td>Cantilever / anchored walls — free-earth LE + Winkler beam-spring, staged construction, Mononobe-Okabe (PyQt6)</td></tr>
-<tr><td>rockslope</td><td>Wedge, planar and block-toppling rock slope stability with bolt design and PDF reports (PySide6)</td></tr>
-<tr><td>pynematic</td><td>Kinematic (Markland) and Monte Carlo analysis of rock slope failure modes, stereonets</td></tr>
-<tr><td>Pavement rutting FEM</td><td>5-layer flexible pavement, von Mises / Drucker-Prager plasticity, multi-cycle loading, LHS datasets (Ferrite.jl)</td></tr>
-<tr><td>Sheet pile ML</td><td>Bending moment, embedment depth and anchor load prediction for sheet pile walls</td></tr>
 </table>
 
 ### 🛠️ Toolbox

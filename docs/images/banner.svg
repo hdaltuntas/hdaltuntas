@@ -1,45 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" width="1280" height="320">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 380" width="1280" height="380">
   <defs>
-    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="1" stop-color="#161b22"/>
-    </linearGradient>
-    <linearGradient id="l1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#3a2f25"/><stop offset="1" stop-color="#2b231c"/>
-    </linearGradient>
-    <linearGradient id="l2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#4a3b2c"/><stop offset="1" stop-color="#3a2f25"/>
-    </linearGradient>
-    <linearGradient id="l3" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#5a4733"/><stop offset="1" stop-color="#4a3b2c"/>
-    </linearGradient>
-    <pattern id="mesh" width="28" height="24" patternUnits="userSpaceOnUse">
-      <path d="M0 24 L14 0 L28 24 Z M14 0 L42 0" fill="none" stroke="#37BCF6" stroke-opacity="0.10" stroke-width="1"/>
+    <radialGradient id="glow" cx="0.88" cy="-0.1" r="0.75">
+      <stop offset="0" stop-color="#e07a55" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#e07a55" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="-0.05" cy="1.1" r="0.55">
+      <stop offset="0" stop-color="#e07a55" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#e07a55" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0 H0 V48" fill="none" stroke="#f3efe6" stroke-opacity="0.045" stroke-width="1"/>
     </pattern>
+    <radialGradient id="fade" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0.35" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridMask"><rect width="1280" height="380" fill="url(#fade)"/></mask>
   </defs>
 
-  <rect width="1280" height="320" fill="url(#sky)"/>
+  <!-- background -->
+  <rect width="1280" height="380" rx="18" fill="#161514"/>
+  <rect width="1280" height="380" rx="18" fill="url(#grid)" mask="url(#gridMask)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
+  <rect width="1280" height="380" rx="18" fill="url(#glow2)"/>
 
-  <!-- soil layers with a slope on the right -->
-  <path d="M0 230 L820 230 L1010 150 L1280 150 L1280 320 L0 320 Z" fill="url(#l3)"/>
-  <path d="M0 262 L1280 262 L1280 320 L0 320 Z" fill="url(#l2)"/>
-  <path d="M0 292 L1280 292 L1280 320 L0 320 Z" fill="url(#l1)"/>
-  <path d="M0 230 L820 230 L1010 150 L1280 150 L1280 320 L0 320 Z" fill="url(#mesh)"/>
+  <!-- text -->
+  <g font-family="Newsreader, Georgia, 'Times New Roman', serif">
+    <text x="64" y="160" fill="#f3efe6" font-size="58" letter-spacing="-1.2">Hasan Deniz Altuntaş</text>
+    <text x="64" y="214" fill="#c6613f" font-size="30" font-style="italic">geotechnical engineer &amp; researcher</text>
+  </g>
+  <text x="64" y="262" fill="#bdb6aa" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18">Slopes · Retaining walls · Pavements · FEM · PINNs</text>
 
-  <!-- critical slip circle -->
-  <path d="M790 230 A190 190 0 0 0 1060 150" fill="none" stroke="#F78166" stroke-width="2.5" stroke-dasharray="7 6"/>
-  <text x="905" y="300" fill="#F78166" font-family="Consolas, 'DejaVu Sans Mono', monospace" font-size="15">FS = 1.42</text>
-
-  <!-- sheet pile wall -->
-  <rect x="250" y="168" width="7" height="118" fill="#8b949e"/>
-  <path d="M257 182 L300 182 L300 230 L257 260" fill="none" stroke="#37BCF6" stroke-width="1.5" stroke-opacity="0.7"/>
-
-  <!-- pavement layers (left) -->
-  <rect x="40" y="200" width="160" height="8" fill="#21262d"/>
-  <rect x="40" y="208" width="160" height="10" fill="#30363d"/>
-  <rect x="40" y="218" width="160" height="12" fill="#484f58"/>
-
-  <!-- name & tagline -->
-  <text x="640" y="88" text-anchor="middle" fill="#e6edf3" font-family="Georgia, 'Times New Roman', serif" font-size="52">Hasan Deniz Altuntaş</text>
-  <text x="640" y="128" text-anchor="middle" fill="#37BCF6" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" letter-spacing="3">GEOTECHNICAL ENGINEERING · FEM · PHYSICS-INFORMED ML</text>
+  <!-- art card -->
+  <rect x="690" y="34" width="548" height="312" rx="22" fill="#ffffff" fill-opacity="0.03" stroke="#f3efe6" stroke-opacity="0.1"/>
+  <g transform="translate(712 62) scale(0.84)">
+    <path fill="#2c2924" d="M0 220 H170 A228.44 228.44 0 0 0 430 120 H600 V300 H0Z"/>
+    <path fill="#25221e" d="M0 262 C120 255 240 270 360 258 S520 250 600 254 V300 H0Z"/>
+    <path fill="none" stroke="#f3efe6" stroke-opacity="0.1" stroke-width="1.2" d="M0 240 C110 236 210 246 330 238 S520 228 600 232"/>
+    <path fill="none" stroke="#f3efe6" stroke-opacity="0.1" stroke-width="1.2" d="M440 160 C480 158 540 164 600 160"/>
+    <path fill="#c6613f" d="M170 220 L200 220 L330 120 L430 120 A228.44 228.44 0 0 1 170 220Z"/>
+    <path fill="none" stroke="#f3efe6" stroke-width="2.2" stroke-linejoin="round" stroke-opacity="0.85" d="M0 220 H200 L330 120 H600"/>
+    <path fill="none" stroke="#f3efe6" stroke-width="1.6" stroke-opacity="0.55" stroke-dasharray="6 6" d="M430 120 A228.44 228.44 0 0 1 170 220"/>
+    <line x1="235" y1="1" x2="430" y2="120" stroke="#847e74" stroke-width="1" stroke-dasharray="3 5"/>
+    <line x1="235" y1="1" x2="170" y2="220" stroke="#847e74" stroke-width="1" stroke-dasharray="3 5"/>
+    <circle cx="235" cy="1" r="4.5" fill="#c6613f"/>
+    <g font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14" fill="#847e74">
+      <text x="246" y="6">O</text>
+      <text x="452" y="110">FS = ?</text>
+    </g>
+  </g>
+  <line x1="712" y1="318" x2="1216" y2="318" stroke="#f3efe6" stroke-opacity="0.1" stroke-dasharray="4 4"/>
+  <text x="712" y="336" fill="#847e74" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12">searching for the critical slip surface…</text>
 </svg>

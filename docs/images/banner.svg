@@ -1,54 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 380" width="1280" height="380">
-  <defs>
-    <radialGradient id="glow" cx="0.88" cy="-0.1" r="0.75">
-      <stop offset="0" stop-color="#e07a55" stop-opacity="0.22"/>
-      <stop offset="1" stop-color="#e07a55" stop-opacity="0"/>
-    </radialGradient>
-    <radialGradient id="glow2" cx="-0.05" cy="1.1" r="0.55">
-      <stop offset="0" stop-color="#e07a55" stop-opacity="0.12"/>
-      <stop offset="1" stop-color="#e07a55" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
-      <path d="M48 0 H0 V48" fill="none" stroke="#f3efe6" stroke-opacity="0.045" stroke-width="1"/>
-    </pattern>
-    <radialGradient id="fade" cx="0.5" cy="0.45" r="0.6">
-      <stop offset="0.35" stop-color="#fff" stop-opacity="1"/>
-      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
-    </radialGradient>
-    <mask id="gridMask"><rect width="1280" height="380" fill="url(#fade)"/></mask>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 460" width="1280" height="460" role="img" aria-label="Hasan Deniz Altuntaş — geotechnical cross-section">
+<style>
+.l1{fill:#5a4b36}.l2{fill:#4d3f2d}.l3{fill:#413526}.l4{fill:#362c20}
+.rock{fill:#4b4843}.joint{stroke:#6e6a62;stroke-width:1.2;fill:none}.reinforced{fill:#5f503a}
+.hatch{stroke:rgba(217,212,202,.2);stroke-width:1}
+.surface{fill:none;stroke:#d9d4ca;stroke-width:2;stroke-linejoin:round}
+.wedge{fill:#e08a68;opacity:.85}
+.envelope{fill:none;stroke:#e08a68;stroke-width:2.4;stroke-dasharray:7 6}
+.mohr{fill:none;stroke:#d9d4ca;stroke-width:1.2;opacity:.6}
+.mesh path{fill:none;stroke:#d9d4ca;stroke-width:.9;opacity:.55}
+.slip{fill:none;stroke:#e08a68;stroke-width:2.6;stroke-dasharray:7 6}
+.slices{stroke:#d9d4ca;stroke-width:1;opacity:.45}
+.struct{fill:#6b6760;stroke:#d9d4ca;stroke-width:1.4}
+.arrow{fill:none;stroke:#e08a68;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.mech{fill:none;stroke:#e08a68;stroke-width:1.6;stroke-dasharray:4 4}
+.fill{fill:#6b573b;stroke:#d9d4ca;stroke-width:1.4}
+.trough{fill:none;stroke:#e08a68;stroke-width:2.2;stroke-dasharray:6 5}
+.bulb{fill:none;stroke:#d9d4ca;stroke-width:1.1;opacity:.5;stroke-dasharray:3 4}
+.piles{stroke:#8b867c;stroke-width:6;stroke-linecap:round}
+.wall{stroke:#9fb2c4;stroke-width:5;stroke-linecap:round}
+.anchor{stroke:#9fb2c4;stroke-width:2}
+.grout{stroke:#e08a68;stroke-width:5;stroke-linecap:round}
+.dig{stroke:#d9d4ca;stroke-width:1;opacity:.35}
+.strips{stroke:#9fb2c4;stroke-width:2.2}
+.active-zone{stroke:#e08a68;stroke-width:1.4;stroke-dasharray:4 4}
+.leader{stroke:#d9d4ca;stroke-width:1;opacity:.5}
+.dot{fill:#1c1b1a;stroke:#e08a68;stroke-width:2}
+.pill{fill:#1c1b1a;stroke:rgba(217,212,202,.22);stroke-width:1}
+.label{font-family:Inter,'Segoe UI',Helvetica,Arial,sans-serif;font-size:12.5px;font-weight:600;fill:#f3efe6}
+.name{font-family:Newsreader,Georgia,'Times New Roman',serif;font-size:50px;fill:#f3efe6;letter-spacing:-1px}
+.sub{font-family:Newsreader,Georgia,'Times New Roman',serif;font-size:24px;font-style:italic;fill:#e08a68}
+</style>
+<defs>
+  <radialGradient id="glowA" cx="0.85" cy="0" r="0.7"><stop offset="0" stop-color="#e08a68" stop-opacity="0.14"/><stop offset="1" stop-color="#e08a68" stop-opacity="0"/></radialGradient>
+  <radialGradient id="glowB" cx="0.1" cy="0.05" r="0.5"><stop offset="0" stop-color="#f0c08a" stop-opacity="0.07"/><stop offset="1" stop-color="#f0c08a" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1280" height="460" rx="18" fill="#1c1b1a"/>
+<rect width="1280" height="460" rx="18" fill="url(#glowA)"/>
+<rect width="1280" height="460" rx="18" fill="url(#glowB)"/>
+<text x="640" y="74" text-anchor="middle" class="name">Hasan Deniz Altuntaş</text>
+<text x="640" y="110" text-anchor="middle" class="sub">geotechnical engineer &amp; researcher</text>
+<g transform="translate(40 136)">
+<svg viewBox="0 0 1200 300" width="1200" height="300" overflow="visible">
+<defs>
+        <clipPath id="ground">
+          <path d="M0 30 L60 30 L105 70 L230 70 L360 160 L880 160 L880 225 L960 225 L990 160 L1010 160 L1010 90 L1150 90 L1150 132 L1200 132 L1200 300 L0 300 Z" />
+        </clipPath>
+        <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <path d="M0 0 L0 7" class="hatch" />
+        </pattern>
+      </defs>
 
-  <!-- background -->
-  <rect width="1280" height="380" rx="18" fill="#161514"/>
-  <rect width="1280" height="380" rx="18" fill="url(#grid)" mask="url(#gridMask)"/>
-  <rect width="1280" height="380" rx="18" fill="url(#glow)"/>
-  <rect width="1280" height="380" rx="18" fill="url(#glow2)"/>
+      
+      <g clip-path="url(#ground)">
+        <rect x="0" y="0" width="1200" height="300" class="l1" />
+        <path d="M0 150 C 200 140, 400 175, 600 185 S 1000 170, 1200 180 V300 H0Z" class="l2" />
+        <path d="M0 225 C 250 215, 450 245, 700 240 S 1050 235, 1200 245 V300 H0Z" class="l3" />
+        <path d="M0 268 C 300 262, 600 280, 900 272 S 1100 268, 1200 272 V300 H0Z" class="l4" />
+        
+        <path d="M0 30 L60 30 L105 70 L150 300 L0 300Z" class="rock" />
+        <path d="M0 60 L90 40 M0 100 L120 70 M0 140 L125 110 M0 180 L135 150 M20 30 L60 120 M50 45 L95 160 M10 150 L40 300" class="joint" />
+        
+        <rect x="1010" y="90" width="90" height="70" class="reinforced" />
+      </g>
 
-  <!-- text -->
-  <g font-family="Newsreader, Georgia, 'Times New Roman', serif">
-    <text x="64" y="160" fill="#f3efe6" font-size="58" letter-spacing="-1.2">Hasan Deniz Altuntaş</text>
-    <text x="64" y="214" fill="#c6613f" font-size="30" font-style="italic">geotechnical engineer &amp; researcher</text>
-  </g>
-  <text x="64" y="262" fill="#bdb6aa" font-family="Inter, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18">Slopes · Retaining walls · Pavements · FEM · PINNs</text>
+      
+      <path d="M0 30 L60 30 L105 70 L230 70 L360 160 L880 160 L880 225 L960 225 L990 160 L1010 160 L1010 90 L1150 90 L1150 132 L1200 132" class="surface" />
 
-  <!-- art card -->
-  <rect x="690" y="34" width="548" height="312" rx="22" fill="#ffffff" fill-opacity="0.03" stroke="#f3efe6" stroke-opacity="0.1"/>
-  <g transform="translate(712 62) scale(0.84)">
-    <path fill="#2c2924" d="M0 220 H170 A228.44 228.44 0 0 0 430 120 H600 V300 H0Z"/>
-    <path fill="#25221e" d="M0 262 C120 255 240 270 360 258 S520 250 600 254 V300 H0Z"/>
-    <path fill="none" stroke="#f3efe6" stroke-opacity="0.1" stroke-width="1.2" d="M0 240 C110 236 210 246 330 238 S520 228 600 232"/>
-    <path fill="none" stroke="#f3efe6" stroke-opacity="0.1" stroke-width="1.2" d="M440 160 C480 158 540 164 600 160"/>
-    <path fill="#c6613f" d="M170 220 L200 220 L330 120 L430 120 A228.44 228.44 0 0 1 170 220Z"/>
-    <path fill="none" stroke="#f3efe6" stroke-width="2.2" stroke-linejoin="round" stroke-opacity="0.85" d="M0 220 H200 L330 120 H600"/>
-    <path fill="none" stroke="#f3efe6" stroke-width="1.6" stroke-opacity="0.55" stroke-dasharray="6 6" d="M430 120 A228.44 228.44 0 0 1 170 220"/>
-    <line x1="235" y1="1" x2="430" y2="120" stroke="#847e74" stroke-width="1" stroke-dasharray="3 5"/>
-    <line x1="235" y1="1" x2="170" y2="220" stroke="#847e74" stroke-width="1" stroke-dasharray="3 5"/>
-    <circle cx="235" cy="1" r="4.5" fill="#c6613f"/>
-    <g font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="14" fill="#847e74">
-      <text x="246" y="6">O</text>
-      <text x="452" y="110">FS = ?</text>
-    </g>
-  </g>
-  <line x1="712" y1="318" x2="1216" y2="318" stroke="#f3efe6" stroke-opacity="0.1" stroke-dasharray="4 4"/>
-  <text x="712" y="336" fill="#847e74" font-family="Consolas, Menlo, 'DejaVu Sans Mono', monospace" font-size="12">searching for the critical slip surface…</text>
+      
+      <g class="spot">
+        <path d="M60 30 L105 70 L72 70 Z" class="wedge" />
+      </g>
+
+      
+      <g class="spot">
+        <path d="M18 286 A 26 26 0 0 1 70 286" class="mohr" />
+        <path d="M12 286 C 20 250, 50 226, 128 214" class="envelope" />
+      </g>
+
+      
+      <g class="spot mesh">
+        <path d="M150 170 L200 150 L250 175 L300 160 M150 170 L180 215 L200 150 L235 210 L250 175 L285 215 L300 160 M180 215 L235 210 L285 215 M150 170 L140 250 L180 215 L200 260 L235 210 L260 262 L285 215 M140 250 L200 260 L260 262" />
+      </g>
+
+      
+      <g class="spot">
+        <path d="M195 70 A 150 150 0 0 0 372 160" class="slip" />
+        <path d="M225 70 L225 100 M255 91 L255 124 M285 111 L285 140 M315 132 L315 152 M345 150 L345 160" class="slices" />
+      </g>
+
+      
+      <g class="spot">
+        <rect x="410" y="148" width="56" height="14" rx="2" class="struct" />
+        <path d="M438 118 L438 144 M432 138 L438 144 L444 138" class="arrow" />
+        <path d="M410 162 L438 190 L466 162 M410 162 C 392 185, 380 190, 368 162 M466 162 C 484 185, 496 190, 508 162" class="mech" />
+      </g>
+
+      
+      <g class="spot">
+        <path d="M530 160 L575 126 L645 126 L690 160 Z" class="fill" />
+        <path d="M520 160 C 560 160, 575 176, 610 176 C 645 176, 660 160, 700 160" class="trough" />
+        <path d="M560 200 C 585 214, 635 214, 660 200" class="bulb" />
+        <path d="M545 232 C 580 252, 640 252, 675 232" class="bulb" />
+      </g>
+
+      
+      <g class="spot">
+        <rect x="722" y="140" width="80" height="14" rx="2" class="struct" />
+        <path d="M735 154 L735 282 M762 154 L762 282 M789 154 L789 282" class="piles" />
+        <path d="M740 118 L740 136 M762 118 L762 136 M784 118 L784 136" class="arrow" />
+      </g>
+
+      
+      <g class="spot">
+        <path d="M880 150 L880 282" class="wall" />
+        <path d="M880 176 L842 196" class="anchor" />
+        <path d="M842 196 L826 204" class="grout" />
+        <path d="M896 225 L896 212 M914 225 L914 214 M932 225 L932 212" class="dig" />
+      </g>
+
+      
+      <g class="spot">
+        <path d="M1010 90 L1010 160" class="wall" />
+        <path d="M1010 100 L1090 100 M1010 114 L1090 114 M1010 128 L1090 128 M1010 142 L1090 142 M1010 154 L1090 154" class="strips" />
+        <path d="M1010 160 L1050 90" class="active-zone" />
+      </g>
+
+      
+      <g class="spot">
+        <path d="M1146 86 L1154 86 L1156 140 L1172 140 L1172 148 L1120 148 L1120 140 L1144 140 Z" class="struct" />
+        <path d="M1144 100 L1122 100" class="arrow" />
+        <path d="M1144 116 L1128 116" class="arrow" />
+        <path d="M1144 132 L1134 132" class="arrow" />
+      </g>
+
+      
+<path d="M58 23 L70 52" class="leader"/><circle cx="70" cy="52" r="3" class="dot"/><g transform="translate(58 14)"><rect x="-51.6" y="-11" width="103.2" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">Kinematic</text></g>
+<path d="M46 301 L72 238" class="leader"/><circle cx="72" cy="238" r="3" class="dot"/><g transform="translate(46 292)"><rect x="-29.6" y="-11" width="59.2" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">Rock</text></g>
+<path d="M262 39 L290 104" class="leader"/><circle cx="290" cy="104" r="3" class="dot"/><g transform="translate(262 30)"><rect x="-20.8" y="-11" width="41.6" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">LE</text></g>
+<path d="M188 301 L210 190" class="leader"/><circle cx="210" cy="190" r="3" class="dot"/><g transform="translate(188 292)"><rect x="-20.8" y="-11" width="41.6" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">2D</text></g>
+<path d="M438 105 L438 150" class="leader"/><circle cx="438" cy="150" r="3" class="dot"/><g transform="translate(438 96)"><rect x="-42.8" y="-11" width="85.6" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">Bearing</text></g>
+<path d="M610 89 L610 124" class="leader"/><circle cx="610" cy="124" r="3" class="dot"/><g transform="translate(610 80)"><rect x="-38.4" y="-11" width="76.8" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">Settle</text></g>
+<path d="M762 105 L762 136" class="leader"/><circle cx="762" cy="136" r="3" class="dot"/><g transform="translate(762 96)"><rect x="-29.6" y="-11" width="59.2" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">Pile</text></g>
+<path d="M900 105 L886 150" class="leader"/><circle cx="886" cy="150" r="3" class="dot"/><g transform="translate(900 96)"><rect x="-29.6" y="-11" width="59.2" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">SPWA</text></g>
+<path d="M1086 55 L1066 96" class="leader"/><circle cx="1066" cy="96" r="3" class="dot"/><g transform="translate(1086 46)"><rect x="-29.6" y="-11" width="59.2" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">MSEW</text></g>
+<path d="M1166 55 L1150 104" class="leader"/><circle cx="1150" cy="104" r="3" class="dot"/><g transform="translate(1166 46)"><rect x="-29.6" y="-11" width="59.2" height="22" rx="11" class="pill"/><text x="0" y="4.5" text-anchor="middle" class="label">Wall</text></g>
+
+</svg>
+</g>
 </svg>

@@ -11,12 +11,6 @@
 <a href="https://www.linkedin.com/in/hasan-deniz-altunta%C5%9F-phd-47b98a239">
     <img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin">
 </a>
-<a href="https://slipsurface.dev">
-    <img src="https://img.shields.io/badge/SlipSurface-slipsurface.dev-37BCF6?style=flat-square">
-</a>
-<a href="mailto:slipsurface@proton.me">
-    <img src="https://img.shields.io/badge/-Email-6D4AFF?style=flat-square&logo=protonmail&logoColor=white">
-</a>
 
 <br/>
 
